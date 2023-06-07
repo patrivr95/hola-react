@@ -2,6 +2,8 @@ import React from 'react';
 import { Contacto } from '../../models/contact.class';
 import ContactComponent from '../pure/contact';
 
+import '../../styles/task.scss';
+
 const ContactListComponent = () => {
 
     const defaultContact = new Contacto("Patricia", "Vadillo", "patrivr95@gmail.com", false);

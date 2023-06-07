@@ -3,6 +3,8 @@ import { Task } from '../../models/task.class';
 import { LEVELS } from '../../models/levels.enum';
 import TaskComponent from '../pure/task';
 
+import '../../styles/task.scss';
+
 const TaskListComponent = () => {
 
     const defaultTask = new Task('Example', 'Default description', false, LEVELS.NORMAL);
@@ -18,7 +20,7 @@ const TaskListComponent = () => {
         return () => {
             console.log("TaskList component is going to unmount");
         };
-    }, [tasks]);
+    }, [task]);
 
 
     const changeCompleted = (id) => {
